@@ -16,7 +16,7 @@ function App() {
 
     const options = {
       method: 'GET',
-      url: 'http://localhost:8000/recipes',
+      url: 'http://localhost:3001/recipes',
       params: {
         q: query
       }
@@ -30,15 +30,9 @@ function App() {
     })
 
 
-    // getRecipes();
+
   }, [query])
-  // const getRecipes = async () => {
-  //   const response = await fetch(`http://localhost:8000/recipes`)
-  //   const data = await response.json()
-  //   setRecipes(data.hits);
 
-
-  // }
 
 
 

@@ -1,4 +1,4 @@
-const PORT = 8000
+const PORT = 3001
 const express = require('express');
 const cors = require('cors')
 const axios = require('axios')
@@ -26,6 +26,6 @@ app.get('/recipes', (req, res) => {
 }
 )
 
-app.listen(8000, () => console.log(`Server is running on port ${PORT}`))
+app.listen(3001, () => console.log(`Server is running on port ${PORT}`))
 
 
