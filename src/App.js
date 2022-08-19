@@ -16,7 +16,7 @@ function App() {
 
     const options = {
       method: 'GET',
-      url: 'http://localhost:3001/recipes',
+      url: 'https://recipes-api-nine.vercel.app/recipes',
       params: {
         q: query
       }
