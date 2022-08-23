@@ -26,6 +26,6 @@ app.get('/recipes', (req, res) => {
 }
 )
 
-app.listen(3001, () => console.log(`Server is running on port ${PORT}`))
+app.listen(PORT, () => console.log(`Server is running on port ${PORT}`))
 
 
