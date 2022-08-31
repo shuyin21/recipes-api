@@ -16,7 +16,7 @@ function App() {
 
     const options = {
       method: 'GET',
-      url: 'http://localhost:3001/recipes',
+      url: 'https://shuyin-recipe.herokuapp.com/recipes',
       params: {
         q: query
       }
