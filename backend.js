@@ -9,7 +9,11 @@ const APP_KEY = process.env.APP_KEY;
 const app = express();
 
 app.use(cors());
+app.use(express.static(path.join(__dirname, "/<front end app folder name>/build")));
 
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '/<front end app folder name>/build', 'index.html'));
+});
 app.get('/recipes', (req, res) => {
 
 
